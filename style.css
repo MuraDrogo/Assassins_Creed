@@ -1,0 +1,1013 @@
+*{/* ОБОВЯЗКОВО НА КОЖНОМУ ПРОЕКТІ */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #000000;
+    height: 100vh;
+}
+/* HEADER */
+.header_block{
+    background: url(https://wallpaperaccess.com/full/522345.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    box-shadow: inset 0px 0px 150px 0px #000000;
+}
+.header_block::after{
+    position: absolute;
+    content: '';
+    background-color: #000000b7;
+    box-shadow: inset 0 0 20px 0 #000000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.header {
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+}
+.header-body {
+    display: flex;
+    width: 1220px;
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.header-logo {
+    width: 150px;
+    height: 140px;
+    z-index: 1;
+    transition: 1s;
+}
+.header-logo:hover{
+    transform: rotatey(160deg);
+}
+.header-menu {
+    display: flex;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #fff;
+    z-index: 1;
+}
+.header-menu-li {
+    padding-right: 30px;
+    transition: 0.5s;
+}
+.header-menu-li:nth-child(1):hover{
+    cursor: pointer;
+    color: #cf0909;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    transform: scale(1.1) translateY(-12px);
+}
+.header-menu-li:nth-child(2):hover{
+    cursor: pointer;
+    color: #09ecd9;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    transform: scale(1.1) translateY(-12px);
+}
+.header-menu-li:nth-child(3):hover{
+    cursor: pointer;
+    color: #c2ec09;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    transform: scale(1.1) translateY(-12px);
+}
+.header-menu-li:nth-child(4):hover{
+    cursor: pointer;
+    color: #03fa18;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    transform: scale(1.1) translateY(-12px);
+}
+.header-menu-li:nth-child(5):hover{
+    cursor: pointer;
+    color: #d909ec;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    transform: scale(1.1) translateY(-12px);
+}
+.header-end {
+    display: flex;
+    align-items: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.header-laun {
+    color: #fff;
+    z-index: 1;
+    order: -2;
+    transition: 0.6s;
+}
+.header-laun:hover{
+    cursor: pointer;
+    color: #5b6cb9;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    transform: scale(1.1) translateY(-12px);
+}
+.span-laun {
+    color: #fff;
+    z-index: 1;
+    order: -2;
+    padding-right: 5px;
+    transition: 0.6s;
+}
+.span-laun:hover{
+    cursor: pointer;
+    color: #fad502;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    transform: scale(1.1) translateY(-5px);
+}
+.header-pat {
+    position: relative;
+    z-index: 1;
+    padding-left: 10px;
+}
+.header-pat::after{
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 2px;
+    background-color: aliceblue;
+    top: 0px;
+    border-radius: 10px;
+    left: 0px;
+    
+}
+.header-pat::after:hover{
+    cursor: pointer;
+    transform: translateY(-20px);
+}
+.header-img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    order: 1;
+    z-index: 1;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.header-img:hover{
+    transform: translateY(-20px);
+}
+
+.main-center {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 150px;
+    font-family: 'Ubuntu Mono', monospace;
+    position: relative;
+    z-index: 1;
+}
+
+.main-title {
+    font-size: 70px;
+    font-weight: 300;
+    color: #fff;
+    z-index: 1;
+    transition: 0.6s;
+    cursor: pointer;
+    position: relative;
+}
+.main-title::before{
+    position: absolute;
+    content: '';
+    background: url();
+    width: 100px;
+    height: 100px;
+    top: 70px;
+    left: 570px;
+    transition: 0.3s;
+}
+.main-center:hover .main-title::before{
+    background: url(./img/welko.png);
+    background-size: cover;
+    width: 210px;
+    height: 120px;
+}
+.main-center:hover .main-title{
+    transform: translateY(-110px);
+    color: #ff5f02;
+}
+.main-center:hover  .main-text{
+    transform: translateY(20px);
+    color: #ff5f02;
+}
+.main-center:hover .main-buttom{
+    transform: translateY(10px);
+}
+.main-center:hover .stor{
+    transform: translateY(10px);
+}
+.main-text {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 1;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.main-buttom {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 250px;
+    height: 70px;
+    background-color: rgba(0, 255, 76, 0.644);
+    backdrop-filter: blur(20px);
+    border: 5px solid #36b90e;
+    border-radius: 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.main-buttom:hover{
+    background-color: rgb(252, 4, 54);
+    border: 5px solid #ff0202;
+}
+.but-text {
+    position: relative;
+    z-index: 1;
+}
+.but-text::after{
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 2px;
+    background-color: aliceblue;
+    top: -6px;
+    border-radius: 10px;
+    margin-left: 10px;
+    z-index: 1;
+}
+.but-number {
+    padding-right: 10px;
+    z-index: 1;
+}
+.stor {
+    color: #87b82d;
+    transition: 0.6s;
+}
+.stor-text {
+    font-weight: 400;
+}
+.stor-span {
+    font-size: 100px;
+}
+
+/* MAIN-1 */
+.backgroud {
+    background: url(https://c4.wallpaperflare.com/wallpaper/145/712/982/assassin-s-creed-valhalla-video-games-video-game-art-digital-art-axe-hd-wallpaper-preview.jpg);
+    height: 100vh;
+    background-size: cover;
+    box-shadow: inset 0 0 30px 130px #000000;
+    padding: 30px;
+    
+}
+.backgroud::after{
+    position: absolute;
+    content: '';
+    background-color: #000000d7;
+    width: 100%;
+    height: 100%;
+    top: 680px;
+    right: 0;
+}
+.blok-flex{
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+.block-text {
+    color: aliceblue;
+    margin-right: 100px;
+    margin-top: 70px;
+    padding: 20px;
+}
+.blok-question {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.blok-question:hover{
+    cursor: pointer;
+    color: #a424fa;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    transform: scale(1.1) translateX(35px);
+}
+.blok-title {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+    border-bottom: 5px solid #ffffff;
+    margin-left: 10px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+.blok-title:hover{
+    letter-spacing: 10px;
+    text-decoration: underline;
+    transform: scale(1.1) translateX(35px);
+    color: #c4fa02;
+    border-bottom: 5px solid #ffffff00;
+}
+.bloc-text-1 {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 100px;
+    padding: 50px;
+}
+.bloc-text-2{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 150px;
+    padding-right: 47px;
+    position: relative;
+}
+.bloc-text-2::before{
+    position: absolute;
+    content: '';
+    width: 75px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: aqua;
+    bottom: -5px;
+    left: 0px;
+}
+.blok-foto {
+    
+    margin-top: 90px;
+}
+.blok-s{
+    display: flex;
+    align-items: center;
+}
+.blok-span-left {
+    font-size: 80px;
+    color: #fff;
+}
+.blok-img {
+    object-fit: cover;
+    width: 450px;
+    height: 400px;
+    box-shadow: 0 0 20px 20px #36b90e;
+    transition: 0.5s;
+}
+.blok-img:hover{
+    box-shadow: 0 0 20px 20px #e50aec;
+}
+.blok-span-right {
+    font-size: 80px;
+    color: #fff;
+}
+
+.radius{
+    display: flex;
+    margin-left: 850px;
+    position: relative;
+    z-index: 1;
+
+}
+.radius-span1 {
+    color: #f5c8c8;
+    padding-left: 30px;
+    position: relative;
+    font-size: 20px;
+}
+.radius-span1::before{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 20px;
+    height: 2px;
+    left: 49px;
+    bottom: 10px;
+}
+.radius-span {
+    color: #f5c8c8;
+    padding-left: 30px;
+    font-size: 20px;
+    position: relative;
+}
+
+/* MAIN-2 */
+.bakground {
+    background: url(https://c4.wallpaperflare.com/wallpaper/728/282/475/god-god-of-war-kratos-omega-wallpaper-preview.jpg);
+    height: 110vh;
+    background-size: cover;
+    box-shadow: inset 20px 20px 120px 150px #000000;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.bakground::after{
+    position: absolute;
+    content: '';
+    background-color: #000000b6;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    
+}
+/* opasitiv-прозорість */
+.games{
+    float: left;
+    z-index: 1;
+    position: absolute;
+    margin: 200px 100px;
+    
+}
+.radios{
+    z-index: 1;
+    position: absolute;
+    margin: 150px 800px;
+    padding-bottom: 30px;
+}
+.radios-span_1 {
+    color: #fff;
+    padding-bottom: 180px;
+    position: relative;
+}
+.radios-span_1::before{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 3px;
+    height: 88%;
+    border-radius: 10px;
+    top: 20px;
+    left: 10px;
+}
+.radios-span_2 {
+    color: #fff;
+    padding-bottom: 185px;
+    position: relative;
+}
+.radios-span_2::before{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 3px;
+    height: 88%;
+    border-radius: 10px;
+    top: 20px;
+    left: 10px;
+}
+.radios-span_3 {
+    color: #fff;
+    position: relative;
+}
+.box {
+    padding-left: 820px;
+    color: aqua;
+    z-index: 1;
+    position: absolute;
+    padding-top: 20px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.box-question {
+    font-size: 25px;
+    color: #554848;
+}
+.box-title {
+    font-size: 60px;
+    color: #554848;
+    padding-bottom: 40px;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+.box-paragraph-1 {
+    font-size: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.box-paragraph-1:hover{
+    color: rgb(151, 206, 1);
+    transform: scale(1.1);
+    letter-spacing: 10px;
+}
+.box-text {
+    color: #fff;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right: 170px;
+    font-family: 'PT Serif', serif;
+}
+.box-paragraph-2 {
+    font-size: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.box-paragraph-2:hover{
+    color: rgb(151, 206, 1);
+    transform: scale(1.1);
+    letter-spacing: 10px;
+}
+.box-paragraph-3 {
+    font-size: 30px;
+    padding-left: 31px;
+    padding-bottom: 30px;
+    color: aqua;
+    font-family: 'Ubuntu Mono', monospace;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.box-paragraph-3:hover{
+    color: rgb(250, 2, 2);
+    letter-spacing: 10px;
+}
+
+/* MAIN-3 */
+.bakground-3{
+    background: url(https://images.alphacoders.com/108/1087575.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    box-shadow: inset 20px 20px 120px 150px #000000;
+    border-bottom: 5px solid #09eafa;
+}
+.bakground-3::after{
+    position: absolute;
+    content: '';
+    background-color: #000000d3;
+    width: 100%;
+    height: 100%;
+    top: 0px; 
+}
+.cloud{
+    background-color: #c4fa0200;
+    width: 220px;
+    height: 100px;
+    border-radius: 20px;
+    margin-left: 200px;
+    transition: 0.6s;
+}
+.down:hover .cloud{
+    background-color: #c4fa02;
+}
+.cloud-text{
+    padding: 40px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #00000000;
+    transition: 0.6s;
+}
+.down:hover .cloud-text{
+    color: #000;
+}
+.down{
+    z-index: 1;
+    position: absolute;
+    margin: 120px 800px;
+    cursor: pointer;
+}
+.emogi{
+    background: url(./img/pngegg5.png);
+    width: 250px;
+    height: 250px;
+    margin-left: 30px;
+}
+.emogi-button{
+    background-color: #990e9e;
+    border: 5px solid #ff06f3;
+    width: 260px;
+    height: 70px;
+    
+    color: #000000;
+    font-size: 20px;
+}
+
+
+
+
+/* VLAD */
+.v-infoblock {
+    box-shadow: 1px 0 2px #000;
+    background: url(./img/1123549.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 720px;
+    position: relative;
+    overflow: hidden;
+}
+.v-info-title {
+    padding: 40px;
+    text-align: center;
+}
+.v-info-title:hover{
+    cursor: pointer;
+}
+.v-info-text {
+    transition: 0.4s;
+    color: aliceblue;
+    font-family: "Roboto Condensed";
+    font-weight: 800;
+    font-size: 25px;
+    text-shadow: 1px 0 2px #000;
+}
+.v-info-text:hover{
+    letter-spacing: 3px;
+}
+.v-title-text {
+    transition: 0.4s;
+    color: darkseagreen;
+    font-family: "Merriweather";
+    font-weight: 800;
+    font-size: 45px;
+    text-shadow: 1px 0 2px #000;
+}
+.v-title-text:hover{
+    transform: scale(1.1);
+}
+.v-block-form {
+    width: 300px;
+    height: 340px;
+    background-color: #09ecd985;
+    background-size: cover;
+    margin: 10px auto;
+    color: rgb(15, 143, 207);
+    text-shadow: 1px 0 2px #000;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+.v-block-form:hover{
+    transition: 0.9s;
+    cursor: pointer;
+    background: url(./img/circle-white-viking-rune-symbol_144316-253.jpg);
+    background-size: cover;
+}
+.v-form-title {
+    text-align: center;
+    color: azure;
+    text-shadow: 1px 0 2px #000;
+    transition: 0.4s;
+}
+.v-form-title:hover{
+    cursor: pointer;
+    color: rgb(0, 195, 255);
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+.v-box {
+    padding: 10px;
+}
+.v-box-label {
+    text-decoration: underline;
+    transition: 0.4s;
+}
+.v-submit {
+    margin-left: 60%;
+    border-radius: 5px;
+    width: 100px;
+    height: 20px;
+    background-color: rgba(127, 255, 212, 0.517);
+    color: rgb(127, 231, 23);
+    text-shadow: 1px 0 2px #000;
+    transition: 0.4s;
+}
+.v-submit:hover{
+    letter-spacing: 3px;
+    cursor: pointer;
+    background-color: rgba(213, 228, 47, 0.517);
+    color: orangered;
+}
+.v-submit:active{
+    background-color: rgba(205, 255, 4, 0.517);
+}
+.v-comment{
+    border-radius: 5px;
+}
+.v-check{
+    margin-left: 5%;
+}
+.v-check:hover{
+    cursor: pointer;
+}
+.v-box-input{
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.4s;
+    background: transparent;
+}
+.v-box-input:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+.v-box-label:hover{
+    color: rgb(17, 195, 88);
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.v-menu {
+    text-align: center;
+    padding-bottom: 20px;
+    font-style: italic;
+    font-size: 18px;
+}
+.v-menu-title {
+    font-size: 40px;
+    color: rgb(17, 177, 177);
+    text-shadow: 1px 0 3px #000000;
+    transition: 0.4s;
+}
+.v-menu-title:hover{
+    color: rgb(203, 153, 28);
+    letter-spacing: 3px;
+}
+.v-menu-text {
+    margin: 3px auto;
+    width: 400px;
+    transition: 0.4s;
+    color: rgb(38, 199, 91);
+    text-shadow: 1px 0 3px #000000;
+}
+.v-menu-text:hover{
+    color: rgb(151, 206, 1);
+    transform: scale(1.2);
+}
+.v-under {
+    transition: 0.4s;
+    margin: 10px auto;
+    width: 100px;
+    height: 3px;
+    background-color: rgb(0, 255, 204);
+}
+.v-under:hover{
+    width: 300px;
+    background-color: gold;
+}
+.v-menu:hover{
+    cursor: pointer;
+}
+.v-blackblock {
+    margin: 0px auto;
+    width: 100%;
+    height: 92px;
+    background-color: #000;
+    position: relative;
+}
+.v-blackblock::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 8px;
+    bottom: 20px;
+    background-color: #00e9ca77;
+}
+.v-second-infoblock {
+    height: 700px;
+    color: aliceblue;
+    background: url(./img/desktop-wallpaper-fond-d-ecran-ubisoft-ubisoft-logo.jpg);
+    background-size: cover ;
+    padding: 10px;
+    overflow: hidden;
+}
+.v-image {
+    transition: 0.4s;
+    width: 350px;
+    height: 200px;
+    border: 6px inset #787474;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.v-image:hover{
+    cursor: pointer;
+    transform: translateX(20px);
+}
+.v-image-2{
+    margin-left: 50px;
+    margin-bottom: 250px;
+    margin-right: 950px;
+    width: 350px;
+    height: 200px;
+    border: 6px inset #48beae;
+    transition: 0.4s;
+}
+.v-image-2:hover{
+    cursor: pointer;
+    transform: translateX(20px);
+}
+.v-news {
+    text-align: center;
+}
+.v-news:hover{
+    cursor: pointer;
+}
+.v-news-title {
+    color: rgb(176, 116, 41);
+    font-size: 30px;
+    font-family: "Bitter";
+    font-style: italic;
+    text-shadow: 1px 2px 2px #ffcd03;
+    transition: 0.4s;
+}
+.v-news-title:hover{
+    color: coral;
+    text-shadow: 1px 2px 2px #ec2709;
+    letter-spacing: 2px;
+}
+.v-news-text {
+    transition: 0.5s;
+    color: rgb(37, 141, 176);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-shadow: 1px 2px 2px #2600ff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.v-news-text:hover{
+    color: rgb(35, 209, 35);
+    text-decoration: underline;
+    text-shadow: 0px 1px 2px #ffffff;
+    transform: skew(-10deg);
+}
+.table {
+    height: 250px;
+    font-style: italic;
+    color: #000;
+    margin-top: -680px;
+    margin-left: 760px;
+    border: 3px inset #ffffff;
+    text-align: center;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+.table:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.thead {
+    color: aliceblue;
+    text-decoration: underline;
+    border: 2px inset #ffffff;
+}
+.table-th:hover{
+    background-color: rgb(197, 209, 32);
+    color: #000;
+    text-decoration: underline;
+}
+.table-tr {
+    border: 2px inset #ffffff;
+}
+.table-th {
+    transition: 0.4s;
+    border: 2px inset #ffffff;
+    background-color: rgb(12, 31, 92);
+    font-size: 18px;
+}
+.tbody {
+    border: 2px inset #ffffff;
+    background-color: #0a6d8e;
+}
+.table-td:hover{
+    background-color: #02a95e;
+}
+.table-td {
+    transition: 0.4s;
+    border: 2px inset #ffffff;
+    font-weight: 600;
+}
+.v-image-3 {
+    margin-left: 50%;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+.v-video {
+    width: 710px;
+    border: 6px inset #1ac35b;
+    height: 300px;
+}
+.v-image-3:hover{
+    cursor: pointer;
+    transform: translateX(-20px) translateY(15px);
+}
+.v-videp:hover{
+    cursor: pointer;
+}
+.footer {
+    color: aliceblue;
+    height: 300px;
+    background-color: #000;
+    background-size: cover;
+    background-position: 20px;
+    padding: 10px;
+}
+.footer-line {
+    transition: 0.4s;
+    margin: 10px auto;
+    width: 100%;
+    height: 3px;
+    background-color: #229e8e;
+}
+.footer-line:hover{
+    cursor: pointer;
+    background-color: #0aae6a;
+    height: 5px;
+}
+.main-logo {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    transition: 1.3s;
+}
+.main-logo:hover{
+    cursor: pointer;
+    transform: rotateY(360deg);
+}
+.footer-link {
+    padding-top: 20px;
+    justify-content: space-around;
+    display: flex;
+}
+.footer-link-nav:hover{
+    cursor: pointer;
+    color: #229e8e;
+    font-size: 20px;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+.footer-link-nav {
+    transition: 0.4s;
+    height: 20px;
+    color: #a8e3c5;
+}
+.up{
+    background-color: rgb(19, 219, 142);
+    color: black;
+    border-radius: 5px;
+    transition: 0.4s;
+    font-weight: 600;
+}
+.up:hover{
+    background-color: rgb(18, 95, 204);
+    color: rgb(38, 195, 35);
+}
+.up:active{
+    background-color: cornflowerblue;
+    color: #ec2709;
+}
+.go-back{
+    margin-left: 90%;  
+}
+.v-politics {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50%;
+    margin-top: 5%;
+}
+.v-politics-text {
+    color: #02a95e;
+    transition: 0.4s;
+}
+.v-politics-text:nth-child(1):hover{
+    cursor: pointer;
+    color: #09ecd9;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    transform: scale(1.1) translateY(-12px);
+}
+.v-politics-text:nth-child(2):hover{
+    cursor: pointer;
+    color: #f1c515;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    transform: scale(1.1) translateY(-12px);
+}
+.v-politics-text:nth-child(3):hover{
+    cursor: pointer;
+    color: #cb500e;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    transform: scale(1.1) translateY(-12px);
+}
+.v-icons {
+    margin-left: 60%;
+    margin-top: -30px;
+}
+.v-icon {
+    width: 250px;
+    height: 40px;
+}
+.v-icon:hover{
+    cursor: pointer;
+}
+
