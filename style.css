@@ -100,6 +100,7 @@ body{
     display: flex;
     align-items: center;
     font-family: 'Ubuntu Condensed', sans-serif;
+    cursor: pointer;
 }
 
 .header-laun {
@@ -107,27 +108,15 @@ body{
     z-index: 1;
     order: -2;
     transition: 0.6s;
+    
 }
-.header-laun:hover{
-    cursor: pointer;
-    color: #5b6cb9;
-    letter-spacing: 2px;
-    text-decoration: underline;
-    transform: scale(1.1) translateY(-12px);
-}
+
 .span-laun {
     color: #fff;
     z-index: 1;
     order: -2;
     padding-right: 5px;
     transition: 0.6s;
-}
-.span-laun:hover{
-    cursor: pointer;
-    color: #fad502;
-    letter-spacing: 2px;
-    text-decoration: underline;
-    transform: scale(1.1) translateY(-5px);
 }
 .header-pat {
     position: relative;
@@ -144,10 +133,6 @@ body{
     border-radius: 10px;
     left: 0px;
     
-}
-.header-pat::after:hover{
-    cursor: pointer;
-    transform: translateY(-20px);
 }
 .header-img{
     width: 40px;
@@ -298,6 +283,7 @@ body{
 .blok-question {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    transition: 0.6s;
 }
 .blok-question:hover{
     cursor: pointer;
@@ -555,8 +541,9 @@ body{
     width: 220px;
     height: 100px;
     border-radius: 20px;
-    margin-left: 200px;
+    margin-left: 500px;
     transition: 0.6s;
+    float: left;
 }
 .down:hover .cloud{
     background-color: #c4fa02;
@@ -574,21 +561,22 @@ body{
 .down{
     z-index: 1;
     position: absolute;
-    margin: 120px 800px;
+    margin: 0px 350px;
     cursor: pointer;
+    margin-bottom: 200px;
 }
 .emogi{
-    background: url(./img/pngegg5.png);
-    width: 250px;
-    height: 250px;
+    background: url(./img/pngegg4.png);
+    width: 500px;
+    height: 550px;
     margin-left: 30px;
 }
 .emogi-button{
     background-color: #990e9e;
     border: 5px solid #ff06f3;
-    width: 260px;
+    width: 350px;
     height: 70px;
-    
+    margin-left: 80px;
     color: #000000;
     font-size: 20px;
 }
@@ -639,15 +627,13 @@ body{
     width: 300px;
     height: 340px;
     background-color: #09ecd985;
-    background-size: cover;
     margin: 10px auto;
     color: rgb(15, 143, 207);
     text-shadow: 1px 0 2px #000;
     border-radius: 10px;
-    transition: 0.8s;
+    transition: 0.5s;
 }
 .v-block-form:hover{
-    transition: 0.9s;
     cursor: pointer;
     background: url(./img/circle-white-viking-rune-symbol_144316-253.jpg);
     background-size: cover;
@@ -774,7 +760,7 @@ body{
     background-color: #00e9ca77;
 }
 .v-second-infoblock {
-    height: 700px;
+    height: 800px;
     color: aliceblue;
     background: url(./img/desktop-wallpaper-fond-d-ecran-ubisoft-ubisoft-logo.jpg);
     background-size: cover ;
@@ -892,9 +878,9 @@ body{
     transition: 0.4s;
 }
 .v-video {
-    width: 710px;
+    width: 650px;
     border: 6px inset #1ac35b;
-    height: 300px;
+    margin-bottom: 200px;
 }
 .v-image-3:hover{
     cursor: pointer;
@@ -904,6 +890,7 @@ body{
     cursor: pointer;
 }
 .footer {
+    
     color: aliceblue;
     height: 300px;
     background-color: #000;
